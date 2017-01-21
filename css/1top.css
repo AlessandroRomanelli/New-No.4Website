@@ -9,12 +9,12 @@
    background-color : rgba(0, 0, 0, 0.25);
    text-align       : center;
    letter-spacing   : 2.5px;
-   transition: .1s;
+   transition       : .1s;
 }
 
 #top a:link {
-   color : lightgray;
-   transition: .25s;
+   color      : lightgray;
+   transition : .25s;
 }
 
 #top a:visited {
@@ -22,7 +22,7 @@
 }
 
 #top a:hover {
-  color: #ffcccc;
+   color : white;
 }
 
 .navigation {
@@ -42,18 +42,18 @@
    margin       : 0;
    padding      : 0 10px;
    border-right : 2px solid #700e0e;
+   text-shadow  : 0 1px 0 #999,
+                  0 2px 0 #440808,
+                  0 3px 0 #440808,
+                  0 4px 0 #000,
+                  0 5px 1px rgba(0,0,0,.3),
+                  0 0 5px rgba(0,0,0,.1),
+                  0 1px 3px rgba(0,0,0,.3),
+                  0 3px 5px rgba(0,0,0,.2),
+                  0 5px 10px rgba(0,0,0,.25),
+                  0 10px 10px rgba(0,0,0,.2),
+                  0 20px 20px rgba(0,0,0,.15);
    line-height  : 50px;
-   text-shadow: 0 1px 0 #999,
-             0 2px 0 #440808,
-             0 3px 0 #440808,
-             0 4px 0 #000,
-             0 6px 1px rgba(0,0,0,.1),
-             0 0 5px rgba(0,0,0,.1),
-             0 1px 3px rgba(0,0,0,.3),
-             0 3px 5px rgba(0,0,0,.2),
-             0 5px 10px rgba(0,0,0,.25),
-             0 10px 10px rgba(0,0,0,.2),
-             0 20px 20px rgba(0,0,0,.15);
 }
 
 .last li {
@@ -61,7 +61,7 @@
 }
 
 #navigationFloater {
-   cursor: pointer;
+   height: 30px;
    width            : 500px;
    margin           : 0 auto;
    color            : lightgray;
@@ -73,17 +73,18 @@
    text-transform   : uppercase;
    font-weight      : bold;
    line-height      : 30px;
-   transition: .1s;
+   transition       : .25s;
+   cursor           : pointer;
 }
 
 #navigationFloater:hover {
-  color: #ffcccc
+   color : white;
 }
 
 .hoverTransform {
-  transform: translateY(10px);
+   transform : translateY(10px);
 }
 
 .clickTransform {
-  transform: translateY(50px);
+   transform : translateY(50px);
 }

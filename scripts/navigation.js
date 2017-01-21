@@ -6,6 +6,7 @@ $("#top").append($navigationHover);
 
 $navigationHover.mouseenter(function(){
   $("#top").addClass("hoverTransform");
+  console.log(window.scrollTop())
 });
 
 $("#top").mouseleave(function(){
@@ -16,11 +17,13 @@ $navigationHover.click(function(){
   if ($("#top").attr("class") == "hoverTransform") {
     $("#top").addClass("clickTransform");
     $("#top").removeClass("hoverTransform");
-    $(this).text("▲ Hide Navigation Bar ▲")
+    $(this).text("▲ Hide Navigation Bar ▲");
+
 }});
 
 $navigationHover.click(function(){
 if ($("#top").attr("class") == "clickTransform hoverTransform") {
       $("#top").removeClass("clickTransform");
       $(this).text("▼ Show Navigation Bar ▼")
+      $(this).fadeIn("slow")
 }});
