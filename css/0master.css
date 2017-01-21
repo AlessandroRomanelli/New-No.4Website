@@ -1,0 +1,59 @@
+/* Web fonts */
+
+/* Rubik */
+
+@font-face {
+   font-family : 'Rubik';
+   font-style  : normal;
+   font-weight : 400;
+   src         : local('Rubik'),
+                 local('Rubik-Regular'),
+                 url(https://fonts.gstatic.com/s/rubik/v4/9TMYrMQsWjH1a-MkCFFAmg.woff2) format('woff2');
+}
+
+@font-face {
+   font-family : 'Rubik';
+   font-style  : normal;
+   font-weight : 400;
+   src         : local('Rubik'),
+                 local('Rubik-Regular'),
+                 url(https://fonts.gstatic.com/s/rubik/v4/_mlO9_1N7oXYhEnEzC2l-g.woff2) format('woff2');
+}
+
+@font-face {
+   font-family : 'Open Sans';
+   font-style  : normal;
+   font-weight : 400;
+   src         : local('Open Sans'),
+                 local('OpenSans'),
+                 url(https://fonts.gstatic.com/s/opensans/v13/u-WUoqrET9fUeobQW7jkRRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+}
+
+@font-face {
+   font-family : 'Open Sans';
+   font-style  : normal;
+   font-weight : 400;
+   src         : local('Open Sans'),
+                 local('OpenSans'),
+                 url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+}
+
+/* Open Sans */
+
+/* Universal styles */
+
+* {
+   box-sizing : border-box;
+}
+
+body {
+   margin           : 0;
+   color            : lightgray;
+   background-color : #1c1b1b;
+   font-family      : "Open Sans";
+}
+
+a:link {
+  text-decoration: none;
+  color: #700e0e;
+}
