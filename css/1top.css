@@ -1,12 +1,12 @@
 #top {
-   position         : relative;
+   position         : fixed;
    top              : -50px;
    left             : 0;
    width            : 100%;
    height           : 50px;
    margin           : 0;
    border-bottom    : 1px solid #700e0e;
-   background-color : rgba(0, 0, 0, 0.25);
+   background-color : rgba(0, 0, 0, .2);
    text-align       : center;
    letter-spacing   : 2.5px;
    transition       : .1s;
@@ -54,6 +54,11 @@
                   0 10px 10px rgba(0,0,0,.2),
                   0 20px 20px rgba(0,0,0,.15);
    line-height  : 50px;
+   transition   : .25s;
+}
+
+.navigation li:hover {
+   text-shadow : 0 0 5px rgba(255,255,255,.5);
 }
 
 .last li {
@@ -61,14 +66,14 @@
 }
 
 #navigationFloater {
-   height: 30px;
    width            : 500px;
+   height           : 30px;
    margin           : 0 auto;
    color            : lightgray;
    border           : 1px solid #700e0e;
    border-top       : none;
    border-radius    : 0 0 10px 10px;
-   background-color : #151414;
+   background-color : rgba(0,0,0,.2);
    text-align       : center;
    text-transform   : uppercase;
    font-weight      : bold;
