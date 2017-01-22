@@ -9,7 +9,8 @@
    text-align       : center;
    letter-spacing   : 2.5px;
    transition       : .1s;
-   box-shadow: 0 5px 10px 0 #1c1c1c;
+   border-bottom: 1px solid rgba(0, 0, 0, .5);
+   z-index: 1000;
 }
 
 #top a:link {
@@ -79,6 +80,8 @@
    line-height      : 30px;
    transition       : .25s;
    cursor           : pointer;
+   border: 1px solid rgba(0, 0, 0, .5);
+   border-top: none;
 }
 
 #navigationFloater:hover {
