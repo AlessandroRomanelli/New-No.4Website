@@ -2,13 +2,15 @@
    position         : relative;
    top              : 0;
    width            : 45%;
-   height           : 1075px;
+   height           : 1225px;
    margin           : 100px auto;
    border           : 1px solid rgba(0,0,0,.5);
    border-radius    : 20px;
    background-color : #1c1c1c;
    text-align       : center;
+   box-shadow: 0 15px 15px 5px rgba(0, 0, 0, 0.5);
 }
+
 
 #about h2 {
    cursor: default;
@@ -22,6 +24,15 @@
                 0 1px 3px rgba(0,0,0,.8),
                 0 3px 5px rgba(0,0,0,.7),
                 0 5px 10px rgba(0,0,0,.7);
+}
+
+#about img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: .2;
+  border-radius: 20px;
 }
 
 .header-img {
