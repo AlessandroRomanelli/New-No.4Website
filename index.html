@@ -7,6 +7,7 @@
     crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <title>New No.4 Commando</title>
+    <link rel="stylesheet" href="css/4contacts.css">
     <link rel="stylesheet" href="css/3about.css">
     <link rel="stylesheet" href="css/2title.css">
     <link rel="stylesheet" href="css/1top.css">
@@ -15,11 +16,11 @@
   <body>
     <header id=top>
       <ul class="navigation">
-        <a href="#top"><li>Home</li></a>
-        <a href="#about"><li>About us</li></a>
-        <a href="#"><li>Gallery</li></a>
-        <a href="#"><li>Mods</li></a>
-        <a href="#" class="last"><li>Join us</li></a>
+        <a class="smoothScroll" href="#main-title"><li>Home</li></a>
+        <a class="smoothScroll" href="#about"><li>About us</li></a>
+        <a class="smoothScroll" href="#"><li>Gallery</li></a>
+        <a class="smoothScroll" href="#"><li>Mods</li></a>
+        <a class="smoothScroll" href="#contacts" class="last"><li>Join us</li></a>
       </ul>
       <div id="navigationFloater">▼ Show Navigation Bar ▼</div>
     </header>
@@ -69,8 +70,23 @@
 
     </div>
 
+    <div id="contacts" class="container">
+      <h2>Join Up</h2>
+      <div id="join-us">
+        <h3>Do you think you have what it takes?</h3>
+        <p>If you would like to join our unit or make any enquiries into what we do then feel free to add one of our friendly leaders using <a href="http://steamcommunity.com/groups/No4Commando" target="_blank">Steam</a> or join our Teamspeak at any time.</p>
+        <div class="people">
+          <a href="http://steamcommunity.com/profiles/76561198045879060/" target="_blank"><h4>Lt. C.Foote</h4></a>
+          <a href="http://steamcommunity.com/id/Hydefinition/" target="_blank"><h4>2Lt. A.Hyde</h4></a>
+          <span>(or connect to our <a href="ts3server://85.236.101.154/?port=11727&nickname=Visitor">Teamspeak 3</a>)</span>
+        </div>
+      </div>
+      <img src="img/join-silhouette.png" alt="">
+    </div>
+
   <footer></footer>
   <script src="scripts/main-title-animation.js"></script>
   <script src="scripts/navigation.js"></script>
+  <script src="scripts/smoothScroll.js"></script>
   </body>
 </html>
