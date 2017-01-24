@@ -17,8 +17,9 @@
     $(this).addClass("selected");
     //2. Load the corresponding div below
       //2.1 Hide all the divs again
+    $("#title-text").hide();
     $(".container").hide();
       //2.2 Show the selected div
     $selectedDiv = $($(this).parent().attr("href"))
-    $selectedDiv.fadeIn();
+    $selectedDiv.fadeIn(100);
 });
