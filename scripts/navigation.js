@@ -1,36 +1,24 @@
-// Show a button that always floats on top of the page and shows the navigationMenu
-// when clicked upon
+// Problem: When a navigation option is clicked, the "selected" class must be given to that
+// object and the corresponding div must be shown below.
 
+// Solution: Use jQuery to assign the selected class when an item is clicked and use the .show
+// .hide() functions to show the corresponding div.
 
-
-$("#navigationFloater").mouseenter(function(){
-  var y = $(window).scrollTop();
-  $(window).scrollTop(y-10);
-  $("#top").addClass("hoverTransform");
+//0. Divs are hidden by default
+//1. Assign the selected class to the #top li item that is clicked.
+  //1.1 Call function when the box is clicked
+  $("#top li").click(function(event){
+    event.preventDefault();
+    //1.2 Clear all previous selected classes
+    $("#top li").each(function(){
+      $(this).removeClass("selected");
+    });
+    //1.3 Assign the selected class to the selected box
+    $(this).addClass("selected");
+    //2. Load the corresponding div below
+      //2.1 Hide all the divs again
+    $(".container").hide();
+      //2.2 Show the selected div
+    $selectedDiv = $($(this).parent().attr("href"))
+    $selectedDiv.fadeIn();
 });
-
-$("#top").mouseleave(function(){
-  var y = $(window).scrollTop();
-  $(window).scrollTop(y+40);
-  $(this).removeClass("hoverTransform");
-  $(this).removeClass("clickTransform");
-  $("#navigationFloater").text("▼ Show Navigation Bar ▼")
-});
-
-$("#navigationFloater").click(function(){
-  if ($("#top").attr("class") == "hoverTransform") {
-    var y = $(window).scrollTop();
-    $(window).scrollTop(y-40);
-    $("#top").addClass("clickTransform");
-    $("#top").removeClass("hoverTransform");
-    $(this).text("▲ Hide Navigation Bar ▲");
-
-}});
-
-$("#navigationFloater").click(function(){
-if ($("#top").attr("class") == "clickTransform hoverTransform") {
-      var y = $(window).scrollTop();
-      $(window).scrollTop(y+40);
-      $("#top").removeClass("clickTransform");
-      $(this).text("▼ Show Navigation Bar ▼")
-}});

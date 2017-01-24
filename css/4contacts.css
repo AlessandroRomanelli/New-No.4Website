@@ -1,5 +1,6 @@
 #contacts {
-  height: 650px;
+  display: none;
+  height: 900px;
 }
 
 #contacts h2 {
@@ -24,7 +25,7 @@
   color: lightgray;
   font-size: 2em;
   padding: 10px 100px;
-  transition: .25s;
+  transition: .5s;
 }
 
 #join-us h4:hover {
@@ -38,6 +39,22 @@
   text-transform: uppercase;
   position: absolute;
   left: 50%;
-  bottom: 25%;
+  bottom: 20%;
   transform: translateX(-50%);
+}
+
+#contacts-img {
+   height: 200px;
+   position : relative;
+}
+
+#contacts-img:after {
+   content         : "";
+   position        : absolute;
+   top             : 0;
+   right           : 0;
+   bottom          : 0;
+   left            : 0;
+   background      : url("../img/contacts-img.jpg") no-repeat center;
+   background-size : cover;
 }
